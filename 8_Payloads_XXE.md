@@ -43,3 +43,4 @@
       <firstName>Tom</firstName>
     </org.opencrx.kernel.account1.Contact>
 
+En Java, on peut aussi lister le contenu d'un dossier avec la classe File. En remplaçant "file:///home/student/crx/apache-tomee-plus-7.0.5/conf/tomcat-users.xml" par "/home/student/crx" dans notre exemple on obtiendrait le contenu de ce dossier.
