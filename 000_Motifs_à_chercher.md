@@ -14,3 +14,9 @@
     doOptions
 
 
+## Partie 9 : openITCOCKPIT XSS and OS Command Injection - Blackbox
+
+### Recherche de points d'entrée pour une XSS DOM-Based
+
+    grep -ir "document.write" ./ --include *.html
+
