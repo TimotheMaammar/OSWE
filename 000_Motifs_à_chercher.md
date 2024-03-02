@@ -23,3 +23,7 @@
 ### Recherche du Javascript custom dans une page
 
     cat page.html | grep -E "script.*src" | grep -Ev "vendor|lib|plugin"
+
+### Recherche de Websockets 
+
+    grep -r  "send(" ./ --exclude="compressed*"
