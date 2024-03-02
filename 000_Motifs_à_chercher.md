@@ -27,3 +27,4 @@
 ### Recherche de Websockets 
 
     grep -r  "send(" ./ --exclude="compressed*"
+    grep -r  "setup(" ./ --exclude="compressed*"
