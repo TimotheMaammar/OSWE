@@ -20,3 +20,6 @@
 
     grep -ir "document.write" ./ --include *.html
 
+### Recherche du Javascript custom dans une page
+
+    cat page.html | grep -E "script.*src" | grep -Ev "vendor|lib|plugin"
